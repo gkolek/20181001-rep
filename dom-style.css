@@ -1,0 +1,174 @@
+* {box-sizing: border-box;}
+
+body {
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+
+header {
+    font-size:24px;
+    font-weight: bold;
+    color: darkcyan;
+}
+
+a {
+    font-size: 20px;
+    color: tomato;
+}
+a:visited {
+    /* font-size: 12px;
+    font-style: italic; */
+    color: aquamarine;
+}
+
+a:hover {
+    color: darkcyan;
+}
+
+nav {
+    padding-left: 10px;
+}
+
+.container {
+    width: 600px;
+    /* margin: 0 auto; */
+    background-color: lawngreen;
+}
+
+main {
+    background-color: yellow;
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    border: 5px darkcyan solid;
+    padding: 10px;
+    /* padding-top: 5px;
+    padding-left: 5px; */
+    float: left;
+}
+main:hover {
+    border: 5px red dotted;
+    background-color: aquamarine;
+}    
+
+main:active {
+    background-color: darkred;
+}
+
+h1 {
+    color: darkred;
+    font-size: 16px;
+    margin: 1px
+}
+
+h2 {
+    color: red;
+    font-size: 12px;
+    /* font-weight: normal; */
+    margin: 1px
+}
+
+.flexible-video-16-9 {
+    position: relative;
+    width: 100%;
+    padding: 10px; 
+    clear: both;
+}
+
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25.00%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50.00%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75.00%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100.00%; }
+
+[class *="col-"] {
+    float: left;
+    padding: 10px;
+    border: 2px solid darkcyan;
+    border-right: 2px solid cyan;
+    border-bottom: 2px solid cyan;
+  }
+
+/* .row [class *="col-"] {
+    border-bottom: 2px solid cyan;
+}
+
+.row [class *="col-"]:last-child {
+    border-bottom: 0;
+} */
+
+.row {
+    clear: both;
+  }
+
+  @media only screen and (max-width:500px){ 
+      body {
+    background-color: lightblue; 
+        }
+    }
+
+aside {
+    background-color: aquamarine;
+    width: 200px;
+    height: 400px;
+    margin: 10px;
+    border: 5px darkcyan solid;
+    padding: 10px;
+    padding-top: 5px;
+    float: left;
+}
+
+aside:hover {
+    border: 5px darkcyan dotted;
+    background-color: yellow;
+}
+
+aside:active {
+    background-color: red;
+}
+
+aside > section h2:nth-child(2n+1) {
+    color: blue;
+}
+
+img.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.lublin {
+    widows: auto;
+    height: 100%;
+    /* widows: 100%;
+    height: 400px; */
+    background-image: url("https://podroze.smcloud.net/t/photos/t/142016/spacer-po-lublinie_1098104.jpg");
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    border: 1px solid red;
+
+}
+.clear {
+    clear: both;
+}
+
+.pics-title {
+    color: aqua;
+}
+
+footer {
+    /* clear: both; */
+    color: darkcyan;
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 10px;
+}
